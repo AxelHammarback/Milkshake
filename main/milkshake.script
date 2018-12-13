@@ -1,0 +1,9 @@
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then 
+		if message.other_group == hash("boy") then
+			sprite.play_flipbook("#sprite", "milkshake-hurt")
+			particlefx.play("#milkshake-particle")
+			msg.post("/gui#ui", "add_score", {score = -50})
+		end	
+	end
+end

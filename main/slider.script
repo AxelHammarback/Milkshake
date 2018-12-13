@@ -1,0 +1,23 @@
+function init(self)
+	-- local pos = 0
+	msg.post(".", "acquire_input_focus")
+	-- go.set_position(pos, "/slider")
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("touch") then
+		local pos = vmath.vector3() 
+		pos.x = action.x
+		pos.y = 30 
+		pos.z = 1
+		go.set_position(pos, "/slider")
+		if pos.x >= 204 then
+			pos.x = 204
+			go.set_position(pos, "/slider")
+		elseif pos.x <= 34 then
+			pos.x = 34
+			go.set_position(pos, "/slider")
+			
+		end
+	end
+end

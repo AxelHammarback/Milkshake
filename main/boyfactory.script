@@ -1,0 +1,20 @@
+function init(self)
+	msg.post(".", "acquire_input_focus") 
+	spawnboy()
+end
+
+function randomspawnpos(self)
+	local center = vmath.vector3(120, 160, 0) 
+	local angle = math.random(0,360)
+	local dx = math.sin(angle)*220
+	local dy = math.cos(angle)*220
+	local pos = vmath.vector3(dx,dy,0)
+	return pos+center
+end
+
+function spawnboy(self)
+	timer.delay(0.6, true, function()
+		local pos = randomspawnpos()
+		collectionfactory.create("#boyfactory", pos)
+	end)
+end

@@ -1,0 +1,157 @@
+images {
+  image: "/main/images/milkshake-white.png"
+}
+images {
+  image: "/main/images/boy-particle.png"
+}
+images {
+  image: "/main/images/milkshake.png"
+}
+images {
+  image: "/main/images/milkshake-particle.png"
+}
+images {
+  image: "/main/images/controls-slider.png"
+}
+images {
+  image: "/main/images/controls-slideRail.png"
+}
+images {
+  image: "/main/images/bg.png"
+}
+images {
+  image: "/main/images/dirt-4.png"
+}
+animations {
+  id: "boy1"
+  images {
+    image: "/main/images/boy-1-w1.png"
+  }
+  images {
+    image: "/main/images/boy-1-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy2"
+  images {
+    image: "/main/images/boy-2-w1.png"
+  }
+  images {
+    image: "/main/images/boy-2-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy3"
+  images {
+    image: "/main/images/boy-3-w1.png"
+  }
+  images {
+    image: "/main/images/boy-3-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy4"
+  images {
+    image: "/main/images/boy-4-w1.png"
+  }
+  images {
+    image: "/main/images/boy-4-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy5"
+  images {
+    image: "/main/images/boy-5-w1.png"
+  }
+  images {
+    image: "/main/images/boy-5-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy6"
+  images {
+    image: "/main/images/boy-6-w1.png"
+  }
+  images {
+    image: "/main/images/boy-6-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "milkshake-hurt"
+  images {
+    image: "/main/images/milkshake-white.png"
+  }
+  images {
+    image: "/main/images/milkshake.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "kelis-walk"
+  images {
+    image: "/main/images/kelis-1.png"
+  }
+  images {
+    image: "/main/images/kelis-2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy7"
+  images {
+    image: "/main/images/boy-7-w1.png"
+  }
+  images {
+    image: "/main/images/boy-7-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "boy8"
+  images {
+    image: "/main/images/boy-8-w1.png"
+  }
+  images {
+    image: "/main/images/boy-8-w2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 1
+inner_padding: 0

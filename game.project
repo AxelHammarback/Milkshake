@@ -1,0 +1,38 @@
+[project]
+title = Milkshake
+version = 0.1
+dependencies = 
+
+[bootstrap]
+main_collection = /main/main.collectionc
+render = /main/default.renderc
+
+[input]
+game_binding = /input/game.input_bindingc
+use_accelerometer = 0
+
+[display]
+width = 240
+height = 320
+
+[physics]
+scale = 0.02
+
+[script]
+shared_state = 1
+
+[android]
+package = com.defold.milkshake
+
+[ios]
+bundle_identifier = com.defold.milkshake
+app_icon_57x57 = /main/appIcon/Icon-57.png
+app_icon_72x72 = /main/appIcon/Icon-72.png
+app_icon_76x76 = /main/appIcon/Icon-76.png
+app_icon_114x114 = /main/appIcon/Icon-114.png
+app_icon_120x120 = /main/appIcon/Icon-120.png
+app_icon_144x144 = /main/appIcon/Icon-144.png
+app_icon_152x152 = /main/appIcon/Icon-152.png
+app_icon_167x167 = /main/appIcon/Icon-167.png
+app_icon_180x180 = /main/appIcon/Icon-180.png
+

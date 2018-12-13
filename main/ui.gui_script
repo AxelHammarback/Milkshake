@@ -1,0 +1,22 @@
+function init(self)
+	self.score = 0
+end
+
+local function fadeback(self, scorenode)
+	gui.animate(scorenode, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.1, 0)
+end
+
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("add_score") then 
+		self.score = self.score + message.score
+		local scorenode = gui.get_node("score")
+		gui.set_text(scorenode, self.score)
+		
+		if message.score <= 0 then
+			gui.animate(scorenode, gui.PROP_COLOR, vmath.vector4(0.8,0,0,01), gui.EASING_LINEAR, 0.1, 0, fadeback)
+		elseif message.score >= 0 then
+			gui.animate(scorenode, gui.PROP_COLOR, vmath.vector4(0,0.8,0,01), gui.EASING_LINEAR, 0.1, 0, fadeback)
+		end
+	end
+end

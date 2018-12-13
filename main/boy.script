@@ -1,0 +1,20 @@
+function init(self)
+	milkshakepos = vmath.vector3(120, 160, 0) 
+	local randomnumber = math.random(1, 8)
+	-- pprint(randomnumber)
+	-- Plays a random "boy" animation sprite
+	msg.post("#sprite", "play_animation", {id = hash("boy" .. randomnumber)})
+	go.animate(".", "position", go.PLAYBACK_ONCE_FORWARD, milkshakepos, go.EASING_LINEAR, 4.2, 1)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then 
+		if message.other_group == hash("kelis") then
+			msg.post("/gui#ui", "add_score", {score = 50})
+			particlefx.play("#boydie-fx")
+			go.delete()
+		elseif message.other_group == hash("milkshake") then
+			go.delete()
+		end	
+	end
+end
